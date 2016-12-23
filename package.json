@@ -1,0 +1,19 @@
+{
+  "name": "non-sequitur",
+  "version": "1.0.0",
+  "description": "Random quote for Slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkbroc/non-sequitur.git"
+  },
+  "author": "Julien Vanier <jvanier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monkbroc/non-sequitur/issues"
+  },
+  "homepage": "https://github.com/monkbroc/non-sequitur#readme"
+}
