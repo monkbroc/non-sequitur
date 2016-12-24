@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Random quote for Slack",
   "main": "index.js",
+  "engines": {
+    "node": ">=6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/monkbroc/non-sequitur/issues"
   },
-  "homepage": "https://github.com/monkbroc/non-sequitur#readme"
+  "homepage": "https://github.com/monkbroc/non-sequitur#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "got": "^6.6.3",
+    "morgan": "^1.7.0",
+    "urijs": "^1.18.4",
+    "winston": "^2.3.0",
+    "winston-papertrail": "^1.0.4"
+  }
 }
