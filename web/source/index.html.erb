@@ -1,0 +1,75 @@
+<section class="page-header -jumbo">
+  <%= image_tag "smirk-cat.png", class: "logo" %>
+  <h1 class="title"><%= data.project.name %></h1>
+  <p class="tagline"><%= data.project.tagline %></p>
+  <%= partial "add_to_slack" %>
+</section>
+
+<section class="page-content">
+  <div class="content-row -reverse">
+    <div class="item description-paragraph">
+      <h1 class="title">Use <code>/quote</code> to get a blast from the past</h1>
+      <p class="body">
+        Remember that one time when someone talked about potatoes?
+        Quote it with <code>/quote potatoes</code>.
+      </p>
+      <p class="body">
+        Or just quote a completely random thing someone said a while
+        back with <code>/quote @user</code>.
+      </p>
+    </div>
+
+    <div class="item">
+      <%= image_tag "screenshot.gif", class: "image-responsive" %>
+    </div>
+  </div>
+
+  <div class="content-row">
+    <div class="item description-paragraph">
+      <h1 class="title">Why??</h1>
+      <p class="body">
+        Because it's funny!
+      </p>
+    </div>
+  </div>
+
+
+  <div class="content-row -reverse">
+    <div class="item description-paragraph">
+      <h1 class="title">Open source</h1>
+      <p class="body">
+        If you'd rather host this yourself or you just want to peek under the hook, go ahead and check out
+        <%= link_to "the source code for #{data.project.name}", data.project.github_url %>.
+      </p>
+    </div>
+
+    <div class="item">
+      <a href="<%= data.project.github_url %>">
+        <%= image_tag "github.jpg", class: "image-responsive" %>
+      </a>
+    </div>
+  </div>
+
+  <div class="content-row">
+    <div class="item description-paragraph">
+      <h1 class="title">Permissions</h1>
+      <p class="body">
+        Here are the permissions that <strong><%= data.project.name %></strong> needs and why:
+        <ul>
+          <li>Confirm your identity: get the Slack ID for the user adding this app</li>
+          <li>Search your team’s content: to find something to reply to <code>/quote</code></li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="item">
+      <%= image_tag "permissions.png", class: "image-responsive" %>
+    </div>
+  </div>
+  <h2 class="support-line">
+    Questions? Concerns? Issues? Tweet to <a href="https://twitter.com/<%= data.project.twitter_handle %>">@<%= data.project.twitter_handle %></a> or <%= link_to "visit the support page", "support" %>
+  </h2>
+  <h2 class="maker-signature">
+    Made with ❤️ by <a href="http://www.julienvanier.com/" class="link-undecorated">Julien Vanier</a>, a slacker just like you.
+  </h2>
+</section>

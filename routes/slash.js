@@ -23,8 +23,8 @@ function addTeamToPayload(payload) {
   return Account.find(payload.teamId)
   .then(account => {
     if (account) {
-      payload.account = account
-      payload.apiToken = account.apiToken
+      payload.account = account;
+      payload.apiToken = account.apiToken;
     }
     return payload;
   });
@@ -54,6 +54,7 @@ module.exports = function (config) {
         logger.error('Called for non-existent team');
         return res.send(teamNotFoundError(req.hostname));
       }
+      logger.info(`Quoting for team ${payload.account.name} (${payload.teamId})`);
 
       if(handler) {
         /* Run the actual logic of the slash command */
@@ -64,7 +65,7 @@ module.exports = function (config) {
           } else {
             res.json(reply);
           }
-          payload.account.actionsPerformed();
+          payload.account.actionPerformed();
         });
       } else {
         res.send("OK");

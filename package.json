@@ -7,6 +7,8 @@
     "node": ">=6.0"
   },
   "scripts": {
+    "start": "node ./bin/www",
+    "build": "cd web && bundle exec middleman build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +29,7 @@
     "mongoose": "^4.7.4",
     "mongoose-timestamp": "^0.6.0",
     "morgan": "^1.7.0",
-    "scmp": "^2.0.0",
+    "scmp": "^1.0.2",
     "urijs": "^1.18.4",
     "winston": "^2.3.0",
     "winston-papertrail": "^1.0.4"
