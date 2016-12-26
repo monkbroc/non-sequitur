@@ -2,7 +2,20 @@
 
 Random quotes from your Slack team
 
+## Use the app
+
+Head over to <https://non-sequitur.info> and click the _Add to Slack_ button.
+
+## Deploy standalone
+
+Want to use the script on your own web server? Copy <lib/quote.js>, add
+an endpoint to your webserver to call `quote.js` with the message and
+Slack API token and add a slash command to your Slack team to call that
+endpoint.
+
 ## Deploy app
+
+To deploy a complete copy of the app, follow these directions:
 
 Commands **L** are local on your laptop, **R** are remote on the Digital Ocean droplet.
 
@@ -47,3 +60,6 @@ Usage hint: @user amazing
 - **R** Add your Slack slash token
 `dokku config non-sequitur SLACK_SLASH_TOKEN=zz`
 - **L** Configure the redirect URL for the Slack app to https://non-sequitur.info/slack/oauth
+
+## License
+Copyright 2016 Julien Vanier. Licensed under the MIT license.
