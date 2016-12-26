@@ -1,4 +1,4 @@
-require('dotenv').load();
+require('dotenv').load({ silent: true });
 
 const express = require('express');
 const morgan = require('morgan');
